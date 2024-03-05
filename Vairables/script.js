@@ -1,16 +1,60 @@
-// let x = "develoepr";
+// Ways to declare a variable
+// `var`, `let`, & `const`
 
-// let b = x.charAt(0).toUpperCase() + x.substring(1);
+let firstName = 'John';
+const lastName = 'Doe';
+let age = 30;
 
-// // let a = x.split("");
+console.log(age);
 
-// // a[0].replace("D", "D");
+// Naming Conventions
+// - Only letters, numbers, underscores and dollar signs
+// - Can't start with a number
 
-// console.log(b);
+// Multi-Word Formatting
+// firstName = camelCase
+// first_name = underscore
+// FirstName = PascalCase
+// firstname = lowercase
 
-let x;
+// We can re-assign `let` variables. If you change `age` to use `const`, you will get an error
+age = 31;
+console.log(age);
 
-const num = 5;
+// With let, we can declare a value without assigning a value
+let score;
+score = 1;
+console.log(score);
 
-x = num.toFixed(2)
-console.log(x)
+if (true) {
+  score = score + 1;
+}
+
+console.log(score);
+
+const x = 100;
+
+// We can not re-assign a const variable
+// x = 200 // Will result in an error
+
+// We can still manipulate arrays and objects using const
+const arr = [1, 2, 3, 4];
+arr.push(5);
+console.log(arr);
+
+const person = {
+  name: 'Brad',
+};
+person.name = 'John';
+person.email = 'brad@gmail.com';
+console.log(person);
+
+// Declare multiple values at once
+let a, b, c;
+
+const d = 10,
+  e = 20,
+  f = 30;
+
+console.log(d);
+console.log(a);
