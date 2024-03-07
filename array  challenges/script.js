@@ -19,4 +19,5 @@ let x = [...arr1, ...arr2];
 
 x.splice(4, 1);
 
+
 console.log(x);
